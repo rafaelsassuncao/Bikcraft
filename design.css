@@ -44,4 +44,72 @@ p {
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.introducao {
+  background: white;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  justify-items: end;
+
+}
+
+.detalhe {
+  width: 60px;
+  height: 4px;
+  background: #ee2211;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.botao {
+  background: #ee2211;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+}
+
+.subtitulo {
+  font-size: 64px;
+  color: rgb(179, 176, 176);
+  text-transform: uppercase;
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+  
+}
+
+.vantagens {
+  background: white;
+  padding: 40px;
+  
+}
+
+.vantagens-itens {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+
+
+}
+
+.vantagens-itens p {
+  grid-column: 2;
+}
+
+.rodape {
+  background: white;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
 }
