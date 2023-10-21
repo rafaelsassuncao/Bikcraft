@@ -1,39 +1,47 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
   display: grid;
-
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
 }
 
-.marca {
-  text-align: center;
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: rgb(110, 108, 108);
-  place-items: center;
-  gap: 40px;
+img {
+  max-width: 100%;
+  display: block;
 }
 
 a {
-  background-color: orangered;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+p, h1, h2, h3 {
+  margin: 0px;
 }
 
 p {
   font-size: 20px;
-
+  line-height: 1.3;
 }
 
-.vantagens {
-  font-size: 64px;
-
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
 }
 
-.imagem {
-  max-width: 100%;
+.menu a {
+  background: gray;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
