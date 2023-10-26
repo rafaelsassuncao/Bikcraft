@@ -55,6 +55,13 @@ p {
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
+  border: 2px solid #ffffff;
+
+}
+
+.menu a:hover {
+  border-color: #e21;
+
 }
 
 .conteudo {
@@ -93,6 +100,11 @@ p {
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
+}
+
+.botao:hover {
+  background-color: #900;
+
 }
 
 .subtitulo {
