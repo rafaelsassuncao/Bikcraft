@@ -127,8 +127,11 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
-  border-left: 2px solid #e21;
+  
+}
 
+.vantagens-item:hover {
+  border-left: 2px solid #e21;
 }
 
 .vantagens-item p {
