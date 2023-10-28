@@ -85,13 +85,15 @@ p {
   font-size: 2rem;
 }
 
-.detalhe {
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
   background: #e21;
   position: absolute;
   top: 30px;
-  right: -30px;
+  right: -30px; 
+
 }
 
 .botao {
@@ -127,11 +129,17 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
-  
+  border-left: 4px solid transparent;
+
+}
+
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+
 }
 
 .vantagens-item:hover {
-  border-left: 2px solid #e21;
+  border-color: #e21;
 }
 
 .vantagens-item p {
