@@ -17,28 +17,51 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3 {
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
   margin: 0px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
 }
 
 .menu a {
-  background: gray;
-  padding: 15px 30px;
+  display: block;
+  background: #ffffff;
+  padding: 1rem 2rem;
   border-radius: 4px;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
+  border: 2px solid #ffffff;
+
+}
+
+.menu a:hover {
+  border-color: #e21;
+
 }
 
 .conteudo {
@@ -48,68 +71,85 @@ p {
 }
 
 .introducao {
-  background: white;
+  background: #fff;
   padding: 40px;
   text-align: right;
   position: relative;
   display: grid;
-  justify-content: center;
-  gap: 40px;
+  gap: 20px;
+  align-content: center;
   justify-items: end;
-
 }
 
-.detalhe {
+.introducao h1 {
+  font-size: 2rem;
+}
+
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
-  background: #ee2211;
+  background: #e21;
   position: absolute;
   top: 30px;
-  right: -30px;
+  right: -30px; 
+
 }
 
 .botao {
-  background: #ee2211;
-  color: white;
-  padding: 15px 30px;
+  background: #e21;
+  color: #fff;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
+}
+
+.botao:hover {
+  background-color: #900;
 
 }
 
 .subtitulo {
-  font-size: 64px;
-  color: rgb(179, 176, 176);
+  font-size: 4rem;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
   text-align: right;
   padding: 40px;
   align-self: center;
-  
+  background-image: url(./img/onda.svg);
 }
 
 .vantagens {
-  background: white;
-  padding: 35px;
-  
+  background: #fff;
+  padding: 40px;
 }
 
-.vantagens-itens {
+.vantagens-item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
-
+  border-left: 4px solid transparent;
 
 }
 
-.vantagens-itens p {
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+
+}
+
+.vantagens-item:hover {
+  border-color: #e21;
+}
+
+.vantagens-item p {
   grid-column: 2;
 }
 
 .rodape {
-  background: white;
+  background: #fff;
   width: 100%;
-  padding: 40px;
   text-align: center;
+  padding: 40px;
   box-sizing: border-box;
 }
