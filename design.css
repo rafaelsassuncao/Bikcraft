@@ -3,7 +3,8 @@ body {
   margin: 0px;
   background: #f7f7f7;
   display: grid;
-  gap: 60px;
+  grid-template-columns: repeat(autofit, minmax (300px, 1fr));
+  gap: 20px;
   justify-items: center;
   margin-top: 60px;
 }
@@ -96,6 +97,13 @@ p {
 
 }
 
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+  
+
+}
+
 .botao {
   background: #e21;
   color: #fff;
@@ -152,4 +160,37 @@ p {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap:30px;
+    margin-top: 20px;
+  }
+
+  .header {
+    gap: 30px;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: left;
+  }
+  .introducao::before {
+    display: none;
+    justify-items: start;
+  }
+  .subtitulo {
+    font-size: 3rem;
+  }
 }
