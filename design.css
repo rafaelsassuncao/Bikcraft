@@ -190,4 +190,7 @@ p {
     display: none;
     justify-items: start;
   }
+  .subtitulo {
+    font-size: 3rem;
+  }
 }
